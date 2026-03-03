@@ -147,21 +147,27 @@ h1 {
 /* === Links === */
 .links {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 56px;
     padding-bottom: 56px;
     border-bottom: 1px solid var(--border);
 }
 
 .links a {
-    font-size: 0.85rem;
-    color: var(--text-tertiary);
+    font-size: 0.82rem;
+    color: var(--text-secondary);
     text-decoration: none;
-    transition: color 0.15s ease;
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .links a:hover {
     color: var(--text);
+    border-color: var(--text-tertiary);
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
 /* === Companies === */
@@ -511,11 +517,10 @@ footer p {
     }
 
     .links {
-        gap: 16px;
+        gap: 8px;
     }
 
     .links a {
-        padding: 8px 0;
         min-height: 44px;
         display: inline-flex;
         align-items: center;
@@ -567,6 +572,10 @@ footer p {
         background-image:
             linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+
+    .links a:hover {
+        background-color: rgba(255, 255, 255, 0.04);
     }
 
     .back-link:hover,
