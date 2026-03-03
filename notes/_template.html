@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST_TITLE — Tyler Giroud</title>
+    <meta name="description" content="POST_DESCRIPTION">
+    <meta name="author" content="Tyler Giroud">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="POST_TITLE — Tyler Giroud">
+    <meta property="og:description" content="POST_DESCRIPTION">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://probability.org/notes/POST_SLUG.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <nav class="post-nav">
+            <a href="../index.html" class="back-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <button class="copy-link" onclick="navigator.clipboard.writeText(window.location.href).then(()=>{this.classList.add('copied');setTimeout(()=>this.classList.remove('copied'),2000)})">
+                <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </nav>
+
+        <article class="post">
+            <header class="post-header">
+                <h1 class="post-title">POST_TITLE</h1>
+                <time class="post-date" datetime="YYYY-MM-DD">Month YYYY</time>
+            </header>
+
+            <div class="post-body">
+                <p>Your content here.</p>
+            </div>
+        </article>
+
+        <nav class="post-pagination">
+            <!-- Previous post (left side) — remove or leave placeholder if none -->
+            <a href="PREV_SLUG.html" class="pagination-link pagination-prev">
+                <span class="pagination-label">Previous</span>
+                <span class="pagination-title">PREV_TITLE</span>
+            </a>
+            <!-- Next post (right side) — remove or leave placeholder if none -->
+            <a href="NEXT_SLUG.html" class="pagination-link pagination-next">
+                <span class="pagination-label">Next</span>
+                <span class="pagination-title">NEXT_TITLE</span>
+            </a>
+        </nav>
+
+        <footer>
+            <p>probability.org</p>
+        </footer>
+    </main>
+</body>
+</html>
